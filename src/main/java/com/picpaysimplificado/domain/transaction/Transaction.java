@@ -66,6 +66,26 @@ public class Transaction {
 		return timestamp;
 	}
 
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public void setAmount(BigDecimal amount) {
+		this.amount = amount;
+	}
+
+	public void setSender(User sender) {
+		this.sender = sender;
+	}
+
+	public void setReceiver(User receiver) {
+		this.receiver = receiver;
+	}
+
+	public void setTimestamp(LocalDateTime timestamp) {
+		this.timestamp = timestamp;
+	}
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(amount, id, receiver, sender, timestamp);
